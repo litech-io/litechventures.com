@@ -430,10 +430,10 @@ svg {
       circle at 18% 22%,
       rgba(17, 189, 230, 0.055),
       transparent 280px
-    );
+  );
   max-width: none;
-  padding-right: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
-  padding-left: max(var(--pad), calc((100vw - var(--max)) / 2 + var(--pad)));
+  padding-right: max(var(--pad), calc((100vw - var(--max)) / 2));
+  padding-left: max(var(--pad), calc((100vw - var(--max)) / 2));
 }
 
 .section-heading {
