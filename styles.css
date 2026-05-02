@@ -22,6 +22,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -941,12 +942,25 @@ svg {
   }
 
   .hero-copy,
-  .positioning,
   .section-heading,
   .closing-copy,
   .contact-panel {
     width: calc(100vw - var(--pad) - var(--pad));
     max-width: calc(100vw - var(--pad) - var(--pad));
+  }
+
+  .positioning h2,
+  .positioning-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .positioning h2 {
+    font-size: clamp(28px, 7.4vw, 34px);
+    line-height: 1.12;
+    max-width: 15ch;
+    overflow-wrap: normal;
+    text-wrap: balance;
   }
 
   .hero h1 {
