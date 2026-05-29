@@ -256,6 +256,7 @@ a {
   color: #d6b06d;
   font-size: clamp(28px, 3vw, 42px);
   line-height: 1.2;
+  min-height: 2.4em;
 }
 
 .engagement-list p {
@@ -344,6 +345,13 @@ a {
   border-color: var(--bg);
 }
 
+.copyright {
+  grid-column: 1 / -1;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  font-size: 13px;
+}
+
 @media (max-width: 920px) {
   .site-header {
     display: block;
@@ -365,6 +373,57 @@ a {
   .engagement-list,
   .proof {
     grid-template-columns: 1fr;
+  }
+
+  .platform {
+    padding-bottom: 56px;
+  }
+
+  .loop article {
+    min-height: auto;
+    padding: 24px 28px 26px;
+  }
+
+  .loop h3 {
+    margin: 28px 0 10px;
+  }
+
+  .engagement-list article {
+    min-height: auto;
+    padding: 24px 28px 28px;
+  }
+
+  .engagement-list h3 {
+    margin: 34px 0 12px;
+    font-size: clamp(26px, 6vw, 34px);
+    min-height: 0;
+  }
+
+  .engagement-list p {
+    line-height: 1.5;
+  }
+
+  .service-strip {
+    margin-top: 20px;
+  }
+
+  .engagement-list {
+    margin-right: calc(var(--pad) * -1);
+    margin-left: calc(var(--pad) * -1);
+  }
+
+  .engagement-list article {
+    padding-right: var(--pad);
+    padding-left: var(--pad);
+  }
+
+  .proof article {
+    min-height: auto;
+    padding: 26px var(--pad);
+  }
+
+  .proof h3 {
+    margin: 28px 0 8px;
   }
 
   .hero-title h1 {
@@ -402,9 +461,70 @@ a {
     padding-left: var(--pad);
   }
 
+  .work {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+
+  .section-heading {
+    gap: 18px;
+    margin-bottom: 30px;
+  }
+
+  .engagement-list {
+    margin-right: calc(var(--pad) * -1);
+    margin-left: calc(var(--pad) * -1);
+  }
+
+  .engagement-list article {
+    padding-right: var(--pad);
+    padding-left: var(--pad);
+  }
+
   .platform {
+    padding-top: 44px;
     margin-right: var(--pad);
     margin-left: var(--pad);
+  }
+
+  .loop {
+    border-radius: 22px;
+  }
+
+  .loop article {
+    padding: 22px;
+  }
+
+  .loop h3 {
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .engagement-list h3 {
+    margin-top: 28px;
+  }
+
+  .service-strip span {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .proof article {
+    padding: 22px var(--pad);
+  }
+
+  .proof h3 {
+    margin-top: 22px;
+    font-size: 24px;
+  }
+
+  .proof p {
+    margin-bottom: 0;
+  }
+
+  .copyright {
+    padding-top: 18px;
+    font-size: 12px;
   }
 
   .hero-title h1 {
